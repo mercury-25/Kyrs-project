@@ -31,7 +31,7 @@ songs = [{
 		src: "http://k003.kiwi6.com/hotlink/gqfxjp1jdw/Wild_Things_remix.mp3",
 		title: "Wild Things",
 		artist: "Andy Mineo",
-		coverart: "http://static.djbooth.net/pics-artist/andy-mineo.jpg"
+		coverart: "https://s3.amazonaws.com/hiphopdx-production/2014/12/J.-Cole-%E2%80%93-Apparently-e1418166093622-300x300.jpg"
 	},
 
 	{
@@ -43,10 +43,12 @@ songs = [{
 
 	{
 		src: "http://k003.kiwi6.com/hotlink/m70002cocx/Andy_Mineo_-_Cocky_Remix_by_Kristjan_Vool_.mp3",
-		title: "Cocky",
+		title: "Cockyss",
 		artist: "Andy Mineo",
 		coverart: "http://static.djbooth.net/pics-artist/andy-mineo.jpg"
-	}
+	 },
+
+
 ];
 
 var initSongSrc = songs[0].src;
