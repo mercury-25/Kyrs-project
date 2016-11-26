@@ -41,31 +41,15 @@
 	</ul>
   </div>
   </div>
-  <div class="progress-play"><!--прогресс ба -->
-  <div class="play-sel">
-	<music-mode player="player" audio="audio"></music-mode>
-	<ul class="musicMode play-style">
-	<li><a ng-href="#" title="Repeat List" ng-click="listPlay()" class="icon-loop"></a></li>
-	<li><a ng-href="#" title="Random Play" ng-click="randomPlay()" class="icon-shuffle"></a></li>
-	<li><a ng-href="#" title="Repeat Single" ng-click="repeatPlay()" class="icon-loop2"></a></li>
-	<li class="play-voice" ng-mouseover="showVol()" ng-mouseleave="hideVol()">
-    <a ng-href="#" class="icon-volume-medium" ng-click="audioMuted()" ng-show="muted"></a>
-	<a ng-href="#" class="icon-volume-mute" ng-click="audioMuted()" ng-show="!muted"></a>	
-  <div class="vol" ng-show="volShow" ng-mouseleave="hideVol()" ng-hide="!volShow">
-	<a ng-href="#" class="play-vol" ng-click="adjustVolume($event)">
-	<span class="play-voling" style="{{volStyle}}"></span>
-	</a>
-  </div>
-	</li>
-    </ul>
-  </div>
-  <div class="progress-bar progressBar" ng-click="adjustPorgress($event)">
-	<progress-bar player="player" audio="audio"></progress-bar>
-	<p class="play-time" ng-init="playTime='-0.00'">{{playTime}}</p>
-  <div class="progress-loading" style="{{bufferWidth}}"></div>
-  <div class="progress-playing" style="{{surplusWidth}}"></div>
-  </div>
+ 	<div class="progress-play">
+			<div class="play-sel">
+				<music-mode player="player" audio="audio"></music-mode>
+			</div>
+
+			<progress-bar player="player" audio="audio"></progress-bar>
+		</div>
 	</article>
+
 	<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><!--подключение jquery -->
     <script src="static/js/main.js"></script> <!--подключение дополнительных скриптов -->
 	<script src="static/js/angular-route.min.js"></script>  <!--angular -->
